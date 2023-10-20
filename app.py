@@ -60,7 +60,7 @@ app.layout = html.Div([html.H1('CWL', style={'textAlign': 'center', 'color': 'gr
                       
                        html.H2('Cities with Latitude', style ={'paddingLeft': '30px', 'textAlign': 'center', 'color': 'green', 'font-family': 'Helvetica', 'font-size': '24px'}),
                        html.H3('11 cities at around 52 degrees latitude', style ={'paddingLeft': '30px', 'textAlign': 'center', 'color': 'green', 'font-family': 'Helvetica'}),
-                       html.Div([html.Div('All the cities', style ={'font-family': 'Helvetica'}), dropdown, df_line, table, map_lat])
+                       html.Div([html.Div('All the cities', style ={'font-family': 'Helvetica'}), dropdown, df_line, table, map])
 
                     
 ])
