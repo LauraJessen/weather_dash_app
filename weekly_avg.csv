@@ -1,0 +1,573 @@
+week_num,avg_temp,city,country,lat,lon
+1,8.14,Bremen,Germany,53.08,8.8
+1,5.66,Krakau,Poland,50.08,19.92
+1,-13.3,Saskatoon,Canada,52.13,-106.67
+1,14.84,Rio Gallegos,Argentina,-51.63,-69.22
+1,8.07,Dublin,Ireland,53.33,-6.25
+1,8.86,Amsterdam,Netherlands,52.37,4.89
+1,7.69,Berlin,Germany,52.52,13.4
+1,-18.43,Irkutsk,Russia,52.27,104.33
+1,-2.6,Minsk,Belarus,53.9,27.57
+1,7.96,Birmingham,United Kingdom,52.49,-1.86
+1,9.41,London,United Kingdom,51.52,-0.11
+2,7.31,Dublin,Ireland,53.33,-6.25
+2,-10.94,Saskatoon,Canada,52.13,-106.67
+2,-19.09,Irkutsk,Russia,52.27,104.33
+2,6.63,Bremen,Germany,53.08,8.8
+2,8.04,London,United Kingdom,51.52,-0.11
+2,14.84,Rio Gallegos,Argentina,-51.63,-69.22
+2,6.6,Birmingham,United Kingdom,52.49,-1.86
+2,6.96,Berlin,Germany,52.52,13.4
+2,7.46,Amsterdam,Netherlands,52.37,4.89
+2,-1.63,Minsk,Belarus,53.9,27.57
+2,4.63,Krakau,Poland,50.08,19.92
+3,1.54,Bremen,Germany,53.08,8.8
+3,-22.94,Irkutsk,Russia,52.27,104.33
+3,-8.96,Saskatoon,Canada,52.13,-106.67
+3,1.43,Berlin,Germany,52.52,13.4
+3,1.0,Birmingham,United Kingdom,52.49,-1.86
+3,3.94,Dublin,Ireland,53.33,-6.25
+3,2.21,Amsterdam,Netherlands,52.37,4.89
+3,0.66,Krakau,Poland,50.08,19.92
+3,1.24,London,United Kingdom,51.52,-0.11
+3,15.43,Rio Gallegos,Argentina,-51.63,-69.22
+3,1.11,Minsk,Belarus,53.9,27.57
+4,0.51,Berlin,Germany,52.52,13.4
+4,-2.17,Minsk,Belarus,53.9,27.57
+4,-12.5,Saskatoon,Canada,52.13,-106.67
+4,3.47,London,United Kingdom,51.52,-0.11
+4,6.69,Dublin,Ireland,53.33,-6.25
+4,3.36,Birmingham,United Kingdom,52.49,-1.86
+4,-19.93,Irkutsk,Russia,52.27,104.33
+4,-0.83,Krakau,Poland,50.08,19.92
+4,14.3,Rio Gallegos,Argentina,-51.63,-69.22
+4,1.19,Bremen,Germany,53.08,8.8
+4,2.74,Amsterdam,Netherlands,52.37,4.89
+5,15.07,Rio Gallegos,Argentina,-51.63,-69.22
+5,4.87,Bremen,Germany,53.08,8.8
+5,-2.99,Minsk,Belarus,53.9,27.57
+5,-0.4,Krakau,Poland,50.08,19.92
+5,7.11,London,United Kingdom,51.52,-0.11
+5,3.31,Berlin,Germany,52.52,13.4
+5,7.76,Dublin,Ireland,53.33,-6.25
+5,6.69,Birmingham,United Kingdom,52.49,-1.86
+5,-15.73,Irkutsk,Russia,52.27,104.33
+5,6.97,Amsterdam,Netherlands,52.37,4.89
+5,-18.1,Saskatoon,Canada,52.13,-106.67
+6,3.86,Amsterdam,Netherlands,52.37,4.89
+6,4.11,Birmingham,United Kingdom,52.49,-1.86
+6,4.59,London,United Kingdom,51.52,-0.11
+6,2.74,Bremen,Germany,53.08,8.8
+6,14.33,Rio Gallegos,Argentina,-51.63,-69.22
+6,-2.94,Krakau,Poland,50.08,19.92
+6,-4.5,Saskatoon,Canada,52.13,-106.67
+6,-4.29,Minsk,Belarus,53.9,27.57
+6,1.74,Berlin,Germany,52.52,13.4
+6,-16.81,Irkutsk,Russia,52.27,104.33
+6,7.0,Dublin,Ireland,53.33,-6.25
+7,7.67,Amsterdam,Netherlands,52.37,4.89
+7,-0.56,Minsk,Belarus,53.9,27.57
+7,6.0,Berlin,Germany,52.52,13.4
+7,-11.41,Saskatoon,Canada,52.13,-106.67
+7,9.46,Rio Gallegos,Argentina,-51.63,-69.22
+7,-13.99,Irkutsk,Russia,52.27,104.33
+7,9.36,Dublin,Ireland,53.33,-6.25
+7,3.84,Krakau,Poland,50.08,19.92
+7,8.14,Birmingham,United Kingdom,52.49,-1.86
+7,9.16,London,United Kingdom,51.52,-0.11
+7,6.4,Bremen,Germany,53.08,8.8
+8,4.43,Krakau,Poland,50.08,19.92
+8,-10.94,Irkutsk,Russia,52.27,104.33
+8,5.1,Berlin,Germany,52.52,13.4
+8,-21.69,Saskatoon,Canada,52.13,-106.67
+8,-2.57,Minsk,Belarus,53.9,27.57
+8,6.6,London,United Kingdom,51.52,-0.11
+8,6.49,Amsterdam,Netherlands,52.37,4.89
+8,5.61,Bremen,Germany,53.08,8.8
+8,7.41,Dublin,Ireland,53.33,-6.25
+8,12.17,Rio Gallegos,Argentina,-51.63,-69.22
+8,6.17,Birmingham,United Kingdom,52.49,-1.86
+9,3.99,Amsterdam,Netherlands,52.37,4.89
+9,5.44,London,United Kingdom,51.52,-0.11
+9,2.89,Berlin,Germany,52.52,13.4
+9,0.63,Krakau,Poland,50.08,19.92
+9,-12.86,Saskatoon,Canada,52.13,-106.67
+9,9.77,Rio Gallegos,Argentina,-51.63,-69.22
+9,5.03,Birmingham,United Kingdom,52.49,-1.86
+9,2.96,Bremen,Germany,53.08,8.8
+9,-5.87,Irkutsk,Russia,52.27,104.33
+9,-1.91,Minsk,Belarus,53.9,27.57
+9,6.16,Dublin,Ireland,53.33,-6.25
+10,4.29,Krakau,Poland,50.08,19.92
+10,2.76,Birmingham,United Kingdom,52.49,-1.86
+10,-12.97,Saskatoon,Canada,52.13,-106.67
+10,11.07,Rio Gallegos,Argentina,-51.63,-69.22
+10,3.69,Amsterdam,Netherlands,52.37,4.89
+10,-2.06,Minsk,Belarus,53.9,27.57
+10,2.29,Berlin,Germany,52.52,13.4
+10,2.19,Bremen,Germany,53.08,8.8
+10,-6.63,Irkutsk,Russia,52.27,104.33
+10,4.99,London,United Kingdom,51.52,-0.11
+10,3.89,Dublin,Ireland,53.33,-6.25
+11,7.49,Dublin,Ireland,53.33,-6.25
+11,-6.93,Irkutsk,Russia,52.27,104.33
+11,7.76,Bremen,Germany,53.08,8.8
+11,1.71,Minsk,Belarus,53.9,27.57
+11,8.39,Rio Gallegos,Argentina,-51.63,-69.22
+11,7.99,Berlin,Germany,52.52,13.4
+11,6.34,Krakau,Poland,50.08,19.92
+11,7.84,Birmingham,United Kingdom,52.49,-1.86
+11,8.41,Amsterdam,Netherlands,52.37,4.89
+11,-10.96,Saskatoon,Canada,52.13,-106.67
+11,8.94,London,United Kingdom,51.52,-0.11
+12,7.34,Minsk,Belarus,53.9,27.57
+12,10.13,London,United Kingdom,51.52,-0.11
+12,9.56,Krakau,Poland,50.08,19.92
+12,8.61,Bremen,Germany,53.08,8.8
+12,8.5,Dublin,Ireland,53.33,-6.25
+12,-9.43,Saskatoon,Canada,52.13,-106.67
+12,-9.43,Irkutsk,Russia,52.27,104.33
+12,9.44,Amsterdam,Netherlands,52.37,4.89
+12,9.36,Berlin,Germany,52.52,13.4
+12,9.57,Rio Gallegos,Argentina,-51.63,-69.22
+12,8.31,Birmingham,United Kingdom,52.49,-1.86
+13,0.99,Minsk,Belarus,53.9,27.57
+13,7.69,Birmingham,United Kingdom,52.49,-1.86
+13,7.2,Rio Gallegos,Argentina,-51.63,-69.22
+13,6.61,Berlin,Germany,52.52,13.4
+13,-0.66,Irkutsk,Russia,52.27,104.33
+13,6.53,Bremen,Germany,53.08,8.8
+13,7.54,Amsterdam,Netherlands,52.37,4.89
+13,-8.74,Saskatoon,Canada,52.13,-106.67
+13,8.51,Dublin,Ireland,53.33,-6.25
+13,8.9,London,United Kingdom,51.52,-0.11
+13,5.56,Krakau,Poland,50.08,19.92
+14,4.73,Berlin,Germany,52.52,13.4
+14,1.93,Krakau,Poland,50.08,19.92
+14,4.81,Minsk,Belarus,53.9,27.57
+14,7.43,Birmingham,United Kingdom,52.49,-1.86
+14,8.59,Dublin,Ireland,53.33,-6.25
+14,-1.73,Irkutsk,Russia,52.27,104.33
+14,8.41,London,United Kingdom,51.52,-0.11
+14,5.29,Bremen,Germany,53.08,8.8
+14,-6.44,Saskatoon,Canada,52.13,-106.67
+14,9.29,Rio Gallegos,Argentina,-51.63,-69.22
+14,6.89,Amsterdam,Netherlands,52.37,4.89
+15,5.83,Rio Gallegos,Argentina,-51.63,-69.22
+15,8.19,Minsk,Belarus,53.9,27.57
+15,7.51,Birmingham,United Kingdom,52.49,-1.86
+15,8.93,Amsterdam,Netherlands,52.37,4.89
+15,7.84,Bremen,Germany,53.08,8.8
+15,8.76,Krakau,Poland,50.08,19.92
+15,9.01,London,United Kingdom,51.52,-0.11
+15,-1.47,Irkutsk,Russia,52.27,104.33
+15,8.74,Berlin,Germany,52.52,13.4
+15,7.73,Dublin,Ireland,53.33,-6.25
+15,5.27,Saskatoon,Canada,52.13,-106.67
+16,1.26,Saskatoon,Canada,52.13,-106.67
+16,10.77,Minsk,Belarus,53.9,27.57
+16,9.89,Berlin,Germany,52.52,13.4
+16,10.53,Krakau,Poland,50.08,19.92
+16,8.3,Birmingham,United Kingdom,52.49,-1.86
+16,-0.46,Irkutsk,Russia,52.27,104.33
+16,9.11,London,United Kingdom,51.52,-0.11
+16,8.13,Rio Gallegos,Argentina,-51.63,-69.22
+16,9.3,Dublin,Ireland,53.33,-6.25
+16,9.46,Amsterdam,Netherlands,52.37,4.89
+16,10.14,Bremen,Germany,53.08,8.8
+17,8.46,Amsterdam,Netherlands,52.37,4.89
+17,6.26,Saskatoon,Canada,52.13,-106.67
+17,3.69,Irkutsk,Russia,52.27,104.33
+17,9.56,Dublin,Ireland,53.33,-6.25
+17,9.51,Krakau,Poland,50.08,19.92
+17,8.87,Minsk,Belarus,53.9,27.57
+17,9.09,Berlin,Germany,52.52,13.4
+17,6.33,Rio Gallegos,Argentina,-51.63,-69.22
+17,7.49,Bremen,Germany,53.08,8.8
+17,8.96,Birmingham,United Kingdom,52.49,-1.86
+17,10.31,London,United Kingdom,51.52,-0.11
+18,6.96,Minsk,Belarus,53.9,27.57
+18,10.19,Bremen,Germany,53.08,8.8
+18,10.63,Berlin,Germany,52.52,13.4
+18,11.8,Dublin,Ireland,53.33,-6.25
+18,10.0,Krakau,Poland,50.08,19.92
+18,11.99,Amsterdam,Netherlands,52.37,4.89
+18,6.16,Irkutsk,Russia,52.27,104.33
+18,12.36,London,United Kingdom,51.52,-0.11
+18,13.04,Saskatoon,Canada,52.13,-106.67
+18,11.34,Birmingham,United Kingdom,52.49,-1.86
+18,7.9,Rio Gallegos,Argentina,-51.63,-69.22
+19,12.51,London,United Kingdom,51.52,-0.11
+19,11.56,Birmingham,United Kingdom,52.49,-1.86
+19,11.67,Dublin,Ireland,53.33,-6.25
+19,13.67,Bremen,Germany,53.08,8.8
+19,13.4,Amsterdam,Netherlands,52.37,4.89
+19,9.3,Irkutsk,Russia,52.27,104.33
+19,14.39,Berlin,Germany,52.52,13.4
+19,10.39,Krakau,Poland,50.08,19.92
+19,11.56,Minsk,Belarus,53.9,27.57
+19,15.24,Saskatoon,Canada,52.13,-106.67
+19,5.77,Rio Gallegos,Argentina,-51.63,-69.22
+20,6.86,Irkutsk,Russia,52.27,104.33
+20,13.63,Minsk,Belarus,53.9,27.57
+20,5.86,Rio Gallegos,Argentina,-51.63,-69.22
+20,12.07,Krakau,Poland,50.08,19.92
+20,11.94,Bremen,Germany,53.08,8.8
+20,11.74,Dublin,Ireland,53.33,-6.25
+20,11.97,Amsterdam,Netherlands,52.37,4.89
+20,13.61,Berlin,Germany,52.52,13.4
+20,12.57,London,United Kingdom,51.52,-0.11
+20,16.97,Saskatoon,Canada,52.13,-106.67
+20,11.59,Birmingham,United Kingdom,52.49,-1.86
+21,3.2,Rio Gallegos,Argentina,-51.63,-69.22
+21,14.4,Krakau,Poland,50.08,19.92
+21,12.84,Dublin,Ireland,53.33,-6.25
+21,16.91,Saskatoon,Canada,52.13,-106.67
+21,9.27,Irkutsk,Russia,52.27,104.33
+21,13.2,Amsterdam,Netherlands,52.37,4.89
+21,15.71,Minsk,Belarus,53.9,27.57
+21,15.46,Berlin,Germany,52.52,13.4
+21,12.83,Bremen,Germany,53.08,8.8
+21,13.66,London,United Kingdom,51.52,-0.11
+21,13.49,Birmingham,United Kingdom,52.49,-1.86
+22,5.99,Rio Gallegos,Argentina,-51.63,-69.22
+22,13.14,Irkutsk,Russia,52.27,104.33
+22,16.06,Berlin,Germany,52.52,13.4
+22,13.17,Minsk,Belarus,53.9,27.57
+22,12.21,Birmingham,United Kingdom,52.49,-1.86
+22,13.33,Dublin,Ireland,53.33,-6.25
+22,13.89,Amsterdam,Netherlands,52.37,4.89
+22,13.19,Bremen,Germany,53.08,8.8
+22,14.57,Krakau,Poland,50.08,19.92
+22,13.54,London,United Kingdom,51.52,-0.11
+22,20.71,Saskatoon,Canada,52.13,-106.67
+23,20.94,Berlin,Germany,52.52,13.4
+23,18.93,Irkutsk,Russia,52.27,104.33
+23,14.67,Birmingham,United Kingdom,52.49,-1.86
+23,14.49,Dublin,Ireland,53.33,-6.25
+23,17.31,Bremen,Germany,53.08,8.8
+23,15.94,Krakau,Poland,50.08,19.92
+23,16.74,London,United Kingdom,51.52,-0.11
+23,16.16,Minsk,Belarus,53.9,27.57
+23,3.26,Rio Gallegos,Argentina,-51.63,-69.22
+23,17.99,Amsterdam,Netherlands,52.37,4.89
+23,22.0,Saskatoon,Canada,52.13,-106.67
+24,17.84,Minsk,Belarus,53.9,27.57
+24,18.27,Berlin,Germany,52.52,13.4
+24,19.89,Saskatoon,Canada,52.13,-106.67
+24,14.84,Krakau,Poland,50.08,19.92
+24,14.41,Irkutsk,Russia,52.27,104.33
+24,2.7,Rio Gallegos,Argentina,-51.63,-69.22
+24,19.96,London,United Kingdom,51.52,-0.11
+24,16.54,Dublin,Ireland,53.33,-6.25
+24,18.99,Bremen,Germany,53.08,8.8
+24,20.57,Amsterdam,Netherlands,52.37,4.89
+24,18.5,Birmingham,United Kingdom,52.49,-1.86
+25,20.39,Bremen,Germany,53.08,8.8
+25,16.9,Dublin,Ireland,53.33,-6.25
+25,20.27,Krakau,Poland,50.08,19.92
+25,20.59,London,United Kingdom,51.52,-0.11
+25,1.53,Rio Gallegos,Argentina,-51.63,-69.22
+25,20.4,Minsk,Belarus,53.9,27.57
+25,18.24,Birmingham,United Kingdom,52.49,-1.86
+25,18.66,Irkutsk,Russia,52.27,104.33
+25,20.43,Amsterdam,Netherlands,52.37,4.89
+25,21.9,Berlin,Germany,52.52,13.4
+25,17.93,Saskatoon,Canada,52.13,-106.67
+26,15.41,Dublin,Ireland,53.33,-6.25
+26,21.07,Saskatoon,Canada,52.13,-106.67
+26,15.63,Birmingham,United Kingdom,52.49,-1.86
+26,14.97,Irkutsk,Russia,52.27,104.33
+26,2.87,Rio Gallegos,Argentina,-51.63,-69.22
+26,17.87,Amsterdam,Netherlands,52.37,4.89
+26,18.17,Krakau,Poland,50.08,19.92
+26,16.94,Minsk,Belarus,53.9,27.57
+26,17.99,London,United Kingdom,51.52,-0.11
+26,19.3,Berlin,Germany,52.52,13.4
+26,17.43,Bremen,Germany,53.08,8.8
+27,14.9,Dublin,Ireland,53.33,-6.25
+27,18.27,London,United Kingdom,51.52,-0.11
+27,20.69,Berlin,Germany,52.52,13.4
+27,18.09,Saskatoon,Canada,52.13,-106.67
+27,17.24,Irkutsk,Russia,52.27,104.33
+27,20.23,Krakau,Poland,50.08,19.92
+27,18.79,Minsk,Belarus,53.9,27.57
+27,0.6,Rio Gallegos,Argentina,-51.63,-69.22
+27,16.09,Birmingham,United Kingdom,52.49,-1.86
+27,18.76,Amsterdam,Netherlands,52.37,4.89
+27,18.73,Bremen,Germany,53.08,8.8
+28,18.07,London,United Kingdom,51.52,-0.11
+28,18.73,Minsk,Belarus,53.9,27.57
+28,20.06,Irkutsk,Russia,52.27,104.33
+28,19.91,Bremen,Germany,53.08,8.8
+28,17.74,Saskatoon,Canada,52.13,-106.67
+28,23.7,Berlin,Germany,52.52,13.4
+28,19.46,Amsterdam,Netherlands,52.37,4.89
+28,14.6,Dublin,Ireland,53.33,-6.25
+28,15.5,Birmingham,United Kingdom,52.49,-1.86
+28,21.61,Krakau,Poland,50.08,19.92
+28,-0.46,Rio Gallegos,Argentina,-51.63,-69.22
+29,16.33,Bremen,Germany,53.08,8.8
+29,20.27,Saskatoon,Canada,52.13,-106.67
+29,-0.93,Rio Gallegos,Argentina,-51.63,-69.22
+29,17.8,Minsk,Belarus,53.9,27.57
+29,19.63,Berlin,Germany,52.52,13.4
+29,14.83,Birmingham,United Kingdom,52.49,-1.86
+29,14.16,Dublin,Ireland,53.33,-6.25
+29,17.33,Amsterdam,Netherlands,52.37,4.89
+29,17.63,London,United Kingdom,51.52,-0.11
+29,18.63,Irkutsk,Russia,52.27,104.33
+29,20.26,Krakau,Poland,50.08,19.92
+30,15.74,Birmingham,United Kingdom,52.49,-1.86
+30,17.06,Amsterdam,Netherlands,52.37,4.89
+30,18.91,Berlin,Germany,52.52,13.4
+30,18.34,Krakau,Poland,50.08,19.92
+30,16.59,Bremen,Germany,53.08,8.8
+30,-1.27,Rio Gallegos,Argentina,-51.63,-69.22
+30,15.29,Dublin,Ireland,53.33,-6.25
+30,20.06,Irkutsk,Russia,52.27,104.33
+30,20.3,Saskatoon,Canada,52.13,-106.67
+30,17.31,London,United Kingdom,51.52,-0.11
+30,17.69,Minsk,Belarus,53.9,27.57
+31,16.1,Bremen,Germany,53.08,8.8
+31,1.66,Rio Gallegos,Argentina,-51.63,-69.22
+31,19.49,Irkutsk,Russia,52.27,104.33
+31,23.01,Saskatoon,Canada,52.13,-106.67
+31,14.61,Birmingham,United Kingdom,52.49,-1.86
+31,16.04,Amsterdam,Netherlands,52.37,4.89
+31,14.39,Dublin,Ireland,53.33,-6.25
+31,18.09,Berlin,Germany,52.52,13.4
+31,16.66,London,United Kingdom,51.52,-0.11
+31,20.44,Minsk,Belarus,53.9,27.57
+31,18.39,Krakau,Poland,50.08,19.92
+32,18.23,Berlin,Germany,52.52,13.4
+32,17.56,Saskatoon,Canada,52.13,-106.67
+32,1.46,Rio Gallegos,Argentina,-51.63,-69.22
+32,17.0,Birmingham,United Kingdom,52.49,-1.86
+32,16.06,Dublin,Ireland,53.33,-6.25
+32,16.79,Krakau,Poland,50.08,19.92
+32,17.44,Amsterdam,Netherlands,52.37,4.89
+32,18.19,Irkutsk,Russia,52.27,104.33
+32,16.79,Bremen,Germany,53.08,8.8
+32,18.26,London,United Kingdom,51.52,-0.11
+32,17.39,Minsk,Belarus,53.9,27.57
+33,14.97,Irkutsk,Russia,52.27,104.33
+33,24.16,Berlin,Germany,52.52,13.4
+33,1.44,Rio Gallegos,Argentina,-51.63,-69.22
+33,19.84,Saskatoon,Canada,52.13,-106.67
+33,17.26,Birmingham,United Kingdom,52.49,-1.86
+33,16.09,Dublin,Ireland,53.33,-6.25
+33,19.49,Amsterdam,Netherlands,52.37,4.89
+33,22.89,Minsk,Belarus,53.9,27.57
+33,23.59,Krakau,Poland,50.08,19.92
+33,20.03,Bremen,Germany,53.08,8.8
+33,19.11,London,United Kingdom,51.52,-0.11
+34,18.04,Amsterdam,Netherlands,52.37,4.89
+34,15.99,Birmingham,United Kingdom,52.49,-1.86
+34,17.43,Saskatoon,Canada,52.13,-106.67
+34,19.71,Minsk,Belarus,53.9,27.57
+34,22.46,Krakau,Poland,50.08,19.92
+34,16.09,Irkutsk,Russia,52.27,104.33
+34,18.93,Bremen,Germany,53.08,8.8
+34,22.57,Berlin,Germany,52.52,13.4
+34,2.23,Rio Gallegos,Argentina,-51.63,-69.22
+34,18.33,London,United Kingdom,51.52,-0.11
+34,14.83,Dublin,Ireland,53.33,-6.25
+35,17.71,Krakau,Poland,50.08,19.92
+35,15.84,Amsterdam,Netherlands,52.37,4.89
+35,22.83,Saskatoon,Canada,52.13,-106.67
+35,17.11,London,United Kingdom,51.52,-0.11
+35,14.81,Bremen,Germany,53.08,8.8
+35,16.84,Berlin,Germany,52.52,13.4
+35,17.66,Irkutsk,Russia,52.27,104.33
+35,14.47,Dublin,Ireland,53.33,-6.25
+35,19.49,Minsk,Belarus,53.9,27.57
+35,3.51,Rio Gallegos,Argentina,-51.63,-69.22
+35,15.2,Birmingham,United Kingdom,52.49,-1.86
+36,21.97,Amsterdam,Netherlands,52.37,4.89
+36,22.6,Birmingham,United Kingdom,52.49,-1.86
+36,22.97,Berlin,Germany,52.52,13.4
+36,21.07,Bremen,Germany,53.08,8.8
+36,16.41,Saskatoon,Canada,52.13,-106.67
+36,18.23,Krakau,Poland,50.08,19.92
+36,24.03,London,United Kingdom,51.52,-0.11
+36,16.31,Minsk,Belarus,53.9,27.57
+36,3.29,Rio Gallegos,Argentina,-51.63,-69.22
+36,17.51,Dublin,Ireland,53.33,-6.25
+36,12.5,Irkutsk,Russia,52.27,104.33
+37,19.41,Krakau,Poland,50.08,19.92
+37,15.69,Minsk,Belarus,53.9,27.57
+37,10.97,Irkutsk,Russia,52.27,104.33
+37,20.26,Berlin,Germany,52.52,13.4
+37,19.44,London,United Kingdom,51.52,-0.11
+37,18.16,Saskatoon,Canada,52.13,-106.67
+37,18.06,Amsterdam,Netherlands,52.37,4.89
+37,16.03,Birmingham,United Kingdom,52.49,-1.86
+37,3.59,Rio Gallegos,Argentina,-51.63,-69.22
+37,13.53,Dublin,Ireland,53.33,-6.25
+37,17.17,Bremen,Germany,53.08,8.8
+38,15.59,London,United Kingdom,51.52,-0.11
+38,13.66,Birmingham,United Kingdom,52.49,-1.86
+38,3.89,Rio Gallegos,Argentina,-51.63,-69.22
+38,17.53,Minsk,Belarus,53.9,27.57
+38,11.99,Irkutsk,Russia,52.27,104.33
+38,17.44,Krakau,Poland,50.08,19.92
+38,15.56,Amsterdam,Netherlands,52.37,4.89
+38,13.16,Dublin,Ireland,53.33,-6.25
+38,19.07,Berlin,Germany,52.52,13.4
+38,16.53,Bremen,Germany,53.08,8.8
+38,16.73,Saskatoon,Canada,52.13,-106.67
+39,14.96,Saskatoon,Canada,52.13,-106.67
+39,16.1,Bremen,Germany,53.08,8.8
+39,17.33,London,United Kingdom,51.52,-0.11
+39,19.03,Berlin,Germany,52.52,13.4
+39,16.77,Krakau,Poland,50.08,19.92
+39,14.1,Dublin,Ireland,53.33,-6.25
+39,16.59,Amsterdam,Netherlands,52.37,4.89
+39,14.77,Birmingham,United Kingdom,52.49,-1.86
+39,6.47,Rio Gallegos,Argentina,-51.63,-69.22
+39,6.9,Irkutsk,Russia,52.27,104.33
+39,15.21,Minsk,Belarus,53.9,27.57
+40,8.77,Saskatoon,Canada,52.13,-106.67
+40,15.77,Berlin,Germany,52.52,13.4
+40,14.69,Birmingham,United Kingdom,52.49,-1.86
+40,16.49,London,United Kingdom,51.52,-0.11
+40,14.27,Krakau,Poland,50.08,19.92
+40,6.94,Rio Gallegos,Argentina,-51.63,-69.22
+40,14.24,Bremen,Germany,53.08,8.8
+40,15.97,Amsterdam,Netherlands,52.37,4.89
+40,6.41,Irkutsk,Russia,52.27,104.33
+40,15.06,Dublin,Ireland,53.33,-6.25
+40,11.46,Minsk,Belarus,53.9,27.57
+41,12.3,Krakau,Poland,50.08,19.92
+41,14.47,Berlin,Germany,52.52,13.4
+41,7.7,Saskatoon,Canada,52.13,-106.67
+41,13.33,Birmingham,United Kingdom,52.49,-1.86
+41,12.64,Dublin,Ireland,53.33,-6.25
+41,13.61,Bremen,Germany,53.08,8.8
+41,14.3,Amsterdam,Netherlands,52.37,4.89
+41,5.73,Irkutsk,Russia,52.27,104.33
+41,7.87,Minsk,Belarus,53.9,27.57
+41,15.69,London,United Kingdom,51.52,-0.11
+41,7.99,Rio Gallegos,Argentina,-51.63,-69.22
+42,13.27,Berlin,Germany,52.52,13.4
+42,12.94,Bremen,Germany,53.08,8.8
+42,7.53,Saskatoon,Canada,52.13,-106.67
+42,11.59,Krakau,Poland,50.08,19.92
+42,13.66,Amsterdam,Netherlands,52.37,4.89
+42,8.09,Minsk,Belarus,53.9,27.57
+42,10.39,Rio Gallegos,Argentina,-51.63,-69.22
+42,14.84,London,United Kingdom,51.52,-0.11
+42,12.79,Birmingham,United Kingdom,52.49,-1.86
+42,2.84,Irkutsk,Russia,52.27,104.33
+42,13.07,Dublin,Ireland,53.33,-6.25
+43,3.61,Saskatoon,Canada,52.13,-106.67
+43,13.81,Birmingham,United Kingdom,52.49,-1.86
+43,9.93,Minsk,Belarus,53.9,27.57
+43,15.34,Berlin,Germany,52.52,13.4
+43,15.64,Amsterdam,Netherlands,52.37,4.89
+43,0.74,Irkutsk,Russia,52.27,104.33
+43,13.14,Krakau,Poland,50.08,19.92
+43,15.04,Bremen,Germany,53.08,8.8
+43,15.59,London,United Kingdom,51.52,-0.11
+43,8.06,Rio Gallegos,Argentina,-51.63,-69.22
+43,13.69,Dublin,Ireland,53.33,-6.25
+44,-3.47,Irkutsk,Russia,52.27,104.33
+44,11.69,London,United Kingdom,51.52,-0.11
+44,-1.84,Saskatoon,Canada,52.13,-106.67
+44,10.51,Dublin,Ireland,53.33,-6.25
+44,11.94,Amsterdam,Netherlands,52.37,4.89
+44,6.09,Minsk,Belarus,53.9,27.57
+44,9.79,Birmingham,United Kingdom,52.49,-1.86
+44,11.33,Berlin,Germany,52.52,13.4
+44,11.33,Krakau,Poland,50.08,19.92
+44,11.44,Bremen,Germany,53.08,8.8
+44,14.39,Rio Gallegos,Argentina,-51.63,-69.22
+45,12.16,Birmingham,United Kingdom,52.49,-1.86
+45,12.16,Rio Gallegos,Argentina,-51.63,-69.22
+45,10.86,Berlin,Germany,52.52,13.4
+45,8.06,Krakau,Poland,50.08,19.92
+45,11.4,Amsterdam,Netherlands,52.37,4.89
+45,-4.37,Irkutsk,Russia,52.27,104.33
+45,10.86,Bremen,Germany,53.08,8.8
+45,8.11,Minsk,Belarus,53.9,27.57
+45,-15.46,Saskatoon,Canada,52.13,-106.67
+45,13.2,Dublin,Ireland,53.33,-6.25
+45,12.84,London,United Kingdom,51.52,-0.11
+46,8.36,Dublin,Ireland,53.33,-6.25
+46,7.57,Amsterdam,Netherlands,52.37,4.89
+46,5.36,Bremen,Germany,53.08,8.8
+46,-9.54,Saskatoon,Canada,52.13,-106.67
+46,-1.24,Minsk,Belarus,53.9,27.57
+46,-6.21,Irkutsk,Russia,52.27,104.33
+46,9.57,London,United Kingdom,51.52,-0.11
+46,4.23,Berlin,Germany,52.52,13.4
+46,2.0,Krakau,Poland,50.08,19.92
+46,13.19,Rio Gallegos,Argentina,-51.63,-69.22
+46,8.0,Birmingham,United Kingdom,52.49,-1.86
+47,7.89,Birmingham,United Kingdom,52.49,-1.86
+47,-3.17,Minsk,Belarus,53.9,27.57
+47,-2.81,Saskatoon,Canada,52.13,-106.67
+47,1.7,Krakau,Poland,50.08,19.92
+47,7.49,Amsterdam,Netherlands,52.37,4.89
+47,-13.04,Irkutsk,Russia,52.27,104.33
+47,3.24,Berlin,Germany,52.52,13.4
+47,8.8,Dublin,Ireland,53.33,-6.25
+47,4.71,Bremen,Germany,53.08,8.8
+47,12.44,Rio Gallegos,Argentina,-51.63,-69.22
+47,8.81,London,United Kingdom,51.52,-0.11
+48,-18.26,Irkutsk,Russia,52.27,104.33
+48,4.84,Birmingham,United Kingdom,52.49,-1.86
+48,6.31,London,United Kingdom,51.52,-0.11
+48,2.86,Bremen,Germany,53.08,8.8
+48,-4.83,Minsk,Belarus,53.9,27.57
+48,1.76,Berlin,Germany,52.52,13.4
+48,12.14,Rio Gallegos,Argentina,-51.63,-69.22
+48,8.0,Dublin,Ireland,53.33,-6.25
+48,0.01,Krakau,Poland,50.08,19.92
+48,-16.4,Saskatoon,Canada,52.13,-106.67
+48,4.53,Amsterdam,Netherlands,52.37,4.89
+49,-17.43,Saskatoon,Canada,52.13,-106.67
+49,-4.24,Minsk,Belarus,53.9,27.57
+49,1.14,Krakau,Poland,50.08,19.92
+49,0.93,Berlin,Germany,52.52,13.4
+49,1.2,Bremen,Germany,53.08,8.8
+49,-15.1,Irkutsk,Russia,52.27,104.33
+49,1.46,Birmingham,United Kingdom,52.49,-1.86
+49,2.06,London,United Kingdom,51.52,-0.11
+49,2.9,Amsterdam,Netherlands,52.37,4.89
+49,3.96,Dublin,Ireland,53.33,-6.25
+49,9.97,Rio Gallegos,Argentina,-51.63,-69.22
+50,13.4,Rio Gallegos,Argentina,-51.63,-69.22
+50,-3.11,Bremen,Germany,53.08,8.8
+50,3.54,Dublin,Ireland,53.33,-6.25
+50,-0.23,Birmingham,United Kingdom,52.49,-1.86
+50,-6.79,Minsk,Belarus,53.9,27.57
+50,-19.04,Irkutsk,Russia,52.27,104.33
+50,0.41,London,United Kingdom,51.52,-0.11
+50,-3.83,Berlin,Germany,52.52,13.4
+50,-0.8,Amsterdam,Netherlands,52.37,4.89
+50,-15.84,Saskatoon,Canada,52.13,-106.67
+50,-5.6,Krakau,Poland,50.08,19.92
+51,8.37,Amsterdam,Netherlands,52.37,4.89
+51,4.69,Berlin,Germany,52.52,13.4
+51,-23.9,Saskatoon,Canada,52.13,-106.67
+51,-2.66,Minsk,Belarus,53.9,27.57
+51,0.16,Krakau,Poland,50.08,19.92
+51,14.46,Rio Gallegos,Argentina,-51.63,-69.22
+51,-15.36,Irkutsk,Russia,52.27,104.33
+51,8.47,Dublin,Ireland,53.33,-6.25
+51,9.7,London,United Kingdom,51.52,-0.11
+51,6.59,Bremen,Germany,53.08,8.8
+51,8.26,Birmingham,United Kingdom,52.49,-1.86
+52,8.36,Berlin,Germany,52.52,13.4
+52,11.2,Rio Gallegos,Argentina,-51.63,-69.22
+52,9.33,London,United Kingdom,51.52,-0.11
+52,0.56,Minsk,Belarus,53.9,27.57
+52,-21.4,Irkutsk,Russia,52.27,104.33
+52,9.07,Amsterdam,Netherlands,52.37,4.89
+52,7.33,Dublin,Ireland,53.33,-6.25
+52,8.47,Bremen,Germany,53.08,8.8
+52,7.46,Birmingham,United Kingdom,52.49,-1.86
+52,5.21,Krakau,Poland,50.08,19.92
+52,-16.44,Saskatoon,Canada,52.13,-106.67

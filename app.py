@@ -8,7 +8,7 @@ from dash import dash_table
 import dash_bootstrap_components as dbc
 
 # reading the data and preparing it for the tables and graphs
-df = pd.read_csv("../data/weekly_avg.csv")
+df = pd.read_csv("weekly_avg.csv")
 df = df.sort_values(by="week_num")
 
 # creating the table
@@ -22,7 +22,6 @@ table = dash_table.DataTable(df_week1.to_dict('records'),
 #creating the line graph
 df_line = px.line(df, x='week_num', y='avg_temp', color='city', height=400, width= 700, 
                   range_x=[1,52], range_y=[-20,30])
-
 
 df_line = dcc.Graph(figure=df_line)
 
