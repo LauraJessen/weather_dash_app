@@ -1,5 +1,5 @@
 # Importing the libraries
-
+import pandas as pd
 import dash
 from dash import Dash, dcc, html, callback
 from dash.dependencies import Input, Output, State
@@ -8,104 +8,82 @@ from dash import dash_table
 import dash_bootstrap_components as dbc
 
 # reading the data and preparing it for the tables and graphs
-df = px.data.gapminder()
-df_germany = df[df['country']=='Germany']
-df_germany = df_germany[['year', 'lifeExp', 'pop', 'gdpPercap']]
-df_countries =df[df['country'].isin(['Germany', 'Belgium', 'Denmark'])]
+df = pd.read_csv("../data/weekly_avg.csv")
+df = df.sort_values(by="week_num")
 
 # creating the table
-table = dash_table.DataTable(df_germany.to_dict('records'),
-                                  [{"name": i, "id": i} for i in df_germany.columns],
-                               style_data={'color': 'white','backgroundColor': "#222222"},
-                              style_header={
-                                  'backgroundColor': 'rgb(210, 210, 210)',
-                                  'color': 'black','fontWeight': 'bold'}, 
-                                     style_table={ 
-                                         'minHeight': '400px', 'height': '400px', 'maxHeight': '400px',
-                                         'minWidth': '900px', 'width': '900px', 'maxWidth': '900px',
-                                         'marginLeft': 'auto', 'marginRight': 'auto',
-                                         'marginTop': 0, 'marginBottom': "30"}
-                                     )
+df_week1 = df[df['week_num'] == 1].drop(columns=['lat','lon', 'normalized_avg_temp'])
+table = dash_table.DataTable(df_week1.to_dict('records'),
+                                  [{'name': i, 'id': i} for i in df_week1.columns],
+                                  style_data={'color': 'white', 'backgroundColor': 'green', 'font-family': 'Helvetica'}
 
-
-#creating the bar graph
-fig = px.bar(df_countries, 
-             x='year', 
-             y='lifeExp',  
-             color='country',
-             barmode='group',
-             height=300, title = "Germany vs Denmark & Belgium",)
-
-fig = fig.update_layout(
-        plot_bgcolor="#222222", paper_bgcolor="#222222", font_color="white", 
-    #margin=dict(l=20, r=20, t=0, b=20)
-)
-    
-
-graph = dcc.Graph(figure=fig)
 
 
 #creating the line graph
-fig2 = px.line(df_germany, x='year', y='lifeExp', height=300, title="Life Expectancy in Germany", markers=True)
-fig2 = fig2.update_layout(
-        plot_bgcolor="#222222", paper_bgcolor="#222222", font_color="white"
-    )
-graph2 = dcc.Graph(figure=fig2)
+df_line = px.line(df, x='week_num', y='avg_temp', color='city', height=400, width= 700, 
+                  range_x=[1,52], range_y=[-20,30])
 
+
+df_line = dcc.Graph(figure=df_line)
 
 #creating the map
-fig3 = px.choropleth(df_countries, locations='iso_alpha', 
-                    projection='natural earth', animation_frame="year",
-                    scope='europe',  
-                    color='lifeExp', locationmode='ISO-3', 
-                    color_continuous_scale=px.colors.sequential.ice)
+map = px.scatter_geo(df,
+                     lat='lat',
+                     lon='lon',
+                     color='avg_temp',
+                     text='city',
+                     projection='natural earth',
+                     title='Maximum Temperature of Cities Around the World',
+                     color_continuous_scale=px.colors.sequential.Plasma)
+map = dcc.Graph(figure=map)
 
-fig3 = fig3.update_layout(
-        plot_bgcolor="#222222", paper_bgcolor="#222222", font_color="white", geo_bgcolor="#222222"
-    )
-graph3 = dcc.Graph(figure=fig3)
+#creating dropdown
+dropdown = dcc.Dropdown(['Irkutsk',
+ 'Krakau',
+ 'Saskatoon',
+ 'Bremen',
+ 'London',
+ 'Dublin',
+ 'Amsterdam',
+ 'Minsk',
+ 'Berlin',
+ 'Birmingham',
+ 'Rio Gallegos'], ['Berlin'], multi=True, style ={'font-family': 'Helvetica'})
 
 
-# using the app with radio item
+
+############## using the app with radio item
 app =dash.Dash(external_stylesheets=[dbc.themes.DARKLY])
 server = app.server
 
-radio= dcc.RadioItems(id="countries",options=['Germany', 'Belgium', 'Denmark'], value="Germany", 
-                      inline=True, style ={'paddingLeft': '30px'})
 
 
-app.layout = html.Div([html.H1('Gap Minder Analysis of Germany', style={'textAlign': 'center', 'color': '#636EFA'}), 
-                       html.Div(html.P("Using the gapminder data we take a look at Germany's profile"), 
-                                style={'marginLeft': 50, 'marginRight': 25}),
-                       html.Div([html.Div('Germany', 
-                                          style={'backgroundColor': '#636EFA', 'color': 'white', 
-                                                 'width': '900px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
-                                 table, radio, graph,  graph2, graph3])
-                      ])
+app.layout = html.Div([html.H1('CWL', style={'textAlign': 'center', 'color': 'green', 'font-family': 'Helvetica', 'font-size': '24px'}), 
+                      
+                       html.H2('Cities with Latitude', style ={'paddingLeft': '30px', 'textAlign': 'center', 'color': 'green', 'font-family': 'Helvetica', 'font-size': '24px'}),
+                       html.H3('11 cities at around 52 degrees latitude', style ={'paddingLeft': '30px', 'textAlign': 'center', 'color': 'green', 'font-family': 'Helvetica'}),
+                       html.Div([html.Div('All the cities', style ={'font-family': 'Helvetica'}), dropdown, df_line, table, map_lat])
 
+                    
+])
 
 @callback(
-    Output(graph, "figure"), 
-    Input("countries", "value"))
+    Output(df_line, "figure"), 
+    Input(dropdown, "value"))
 
-#let's also define discrete colors for each bar, so we can distinguish them easily, everytime we change our selection
+def update_line_chart(selected_cities): 
+    mask = df["city"] == selected_cities
+    if not selected_cities:
+        fig =px.bar(df[mask], x='week_num', y='avg_temp', color='city', height=400, width= 700, 
+            range_x=[1,52], range_y=[-20,30], title = "all cities")
+    else: 
+        fig = px.line(df[df['city'].isin(selected_cities)], x='week_num', y='avg_temp', color='city', title='Selected Cities')
 
-def update_bar_chart(country): 
-    mask = df_countries["country"]==(country)
-    fig =px.bar(df_countries[mask], 
-             x='year', 
-             y='lifeExp',  
-             color='country',
-             color_discrete_map = {'Germany': '#7FD4C1', 'Denmark': '#8690FF', 'Belgium': '#F7C0BB'},
-             barmode='group',
-             height=300, title = "Germany vs Denmark & Belgium",)
+        
     fig = fig.update_layout(
-        plot_bgcolor="#222222", paper_bgcolor="#222222", font_color="white"
-    )
+        plot_bgcolor="#222222", paper_bgcolor="#222222", font_color="yellow")
+  
+    return fig
 
-    return fig 
-
-
-
-if __name__ == "__main__":
-    app.run_server()
+if __name__ == '__main__':
+     app.run_server()
