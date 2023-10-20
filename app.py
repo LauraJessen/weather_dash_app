@@ -12,7 +12,7 @@ df = pd.read_csv("weekly_avg.csv")
 df = df.sort_values(by="week_num")
 
 # creating the table
-df_week1 = df[df['week_num'] == 1].drop(columns=['lat','lon', 'normalized_avg_temp'])
+df_week1 = df[df['week_num'] == 1].drop(columns=['lat','lon'])
 table = dash_table.DataTable(df_week1.to_dict('records'),
                             [{'name': i, 'id': i} for i in df_week1.columns],
                             style_data={'color': 'white', 'backgroundColor': 'green', 'font-family': 'Helvetica'})
