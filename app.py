@@ -46,7 +46,7 @@ dropdown = dcc.Dropdown(['Irkutsk',
  'Minsk',
  'Berlin',
  'Birmingham',
- 'Rio Gallegos'], ['Berlin'], multi=True, style ={'font-family': 'Helvetica'})
+'Rio Gallegos'], ['Berlin'], multi=True, style ={'font-family': 'Helvetica'})
 
 
 
@@ -70,7 +70,7 @@ app.layout = html.Div([html.H1('CWL', style={'textAlign': 'center', 'color': 'gr
     Input(dropdown, "value"))
 
 def update_line_chart(selected_cities): 
-    mask = df["city"] == selected_cities
+    mask = df["city"].isin(selected_cities)
     if not selected_cities:
         fig =px.bar(df[mask], x='week_num', y='avg_temp', color='city', height=400, width= 700, 
             range_x=[1,52], range_y=[-20,30], title = "all cities")
