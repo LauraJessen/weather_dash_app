@@ -20,7 +20,7 @@ table = dash_table.DataTable(df_week1.to_dict('records'),
 
 
 #creating the line graph
-df_line = px.line(df, x='week_num', y='avg_temp', color='city', height=400, width= 700, range_x=[1,52], range_y=[-20,30])
+df_line = px.line(df, x='week_num', y='avg_temp', color='city', height=400, width= 900, range_x=[1,52], range_y=[-20,30])
 
 df_line = dcc.Graph(figure=df_line)
 
@@ -31,8 +31,11 @@ map = px.scatter_geo(df,
                      color='avg_temp',
                      text='city',
                      projection='natural earth',
-                     title='Maximum Temperature of Cities Around the World',
-                     color_continuous_scale=px.colors.sequential.Plasma)
+                     title='11 cities',
+                     color_continuous_scale=px.colors.sequential.Plasma,
+                     #update: added animation_frame and height 
+                     animation_frame= 'week_num',
+                     height= 600)
 map = dcc.Graph(figure=map)
 
 #creating dropdown
@@ -46,7 +49,7 @@ dropdown = dcc.Dropdown(['Irkutsk',
  'Minsk',
  'Berlin',
  'Birmingham',
-'Rio Gallegos'], ['Berlin'], multi=True, style ={'font-family': 'Helvetica'})
+'Rio Gallegos'], ['Berlin'], multi=True, style ={'font-family': 'Helvetica', "color": "black"})
 
 
 
