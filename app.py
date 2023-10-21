@@ -17,7 +17,7 @@ table = dash_table.DataTable(df_week1.to_dict('records'),
                             [{'name': i, 'id': i} for i in df_week1.columns],
                             style_data={'color': 'white', 'backgroundColor': 'green', 'font-family': 'Helvetica'},
                             #update: header
-                            style_header={'backgroundColor': 'green', 'font-family': 'Helvetica'})
+                            style_header={'text':'black', 'backgroundColor': 'green', 'font-family': 'Helvetica'})
 
 
 
@@ -33,7 +33,7 @@ map = px.scatter_geo(df,
                      color='avg_temp',
                      #changing markers size
                      size='avg_temp',
-                     size_max=10
+                     size_max=40
                      text='city',
                      projection='natural earth',
                      title='11 cities',
