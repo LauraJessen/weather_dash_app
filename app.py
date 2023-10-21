@@ -15,7 +15,9 @@ df = df.sort_values(by="week_num")
 df_week1 = df[df['week_num'] == 1].drop(columns=['lat','lon'])
 table = dash_table.DataTable(df_week1.to_dict('records'),
                             [{'name': i, 'id': i} for i in df_week1.columns],
-                            style_data={'color': 'white', 'backgroundColor': 'green', 'font-family': 'Helvetica'})
+                            style_data={'color': 'white', 'backgroundColor': 'green', 'font-family': 'Helvetica'},
+                            #update: header
+                            style_header={'backgroundColor': 'green', 'font-family': 'Helvetica'})
 
 
 
@@ -29,10 +31,15 @@ map = px.scatter_geo(df,
                      lat='lat',
                      lon='lon',
                      color='avg_temp',
+                     #changing markers size
+                     size='avg_temp',
+                     size_max=10
                      text='city',
                      projection='natural earth',
                      title='11 cities',
                      color_continuous_scale=px.colors.sequential.Plasma,
+                     #update range to fix values 
+                     range_color= (-20, 30),
                      #update: added animation_frame and height 
                      animation_frame= 'week_num',
                      height= 600)
