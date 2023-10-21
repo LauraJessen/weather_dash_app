@@ -33,7 +33,7 @@ map = px.scatter_geo(df,
                      color='avg_temp',
                      #changing markers size
                      size='avg_temp',
-                     size_max=40
+                     size_max=40,
                      text='city',
                      projection='natural earth',
                      title='11 cities',
